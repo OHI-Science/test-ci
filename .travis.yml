@@ -11,7 +11,7 @@ script:
 - echo TRAVIS_COMMIT:"${TRAVIS_COMMIT}"
 - echo GH_TOKEN:"${GH_TOKEN}"
 - echo TRAVIS_REPO_SLUG:"${TRAVIS_REPO_SLUG}"
-- echo 'test' > testing.txt
+- echo 'test travis' > test.md
 after_success:
 - ./ohi-travis-tool.sh push_changes
 notifications:
